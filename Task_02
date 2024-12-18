@@ -1,0 +1,22 @@
+# Random Story Generator
+
+# It is one of the exciting beginner Python projects with source code. Every time a user runs the code, the random story generator
+# project tries to produce a different and random story
+
+import random
+
+def random_story():
+    characters = ["Alice", "Bob", "Charlie", "Diana", "Eve"]
+    locations = ["a magical forest", "a haunted house", "the moon", "a secret cave", "a castle"]
+    actions = ["found a hidden treasure", "was trapped by a dragon", "discovered a new world", "solved an ancient riddle", "befriended a giant"]
+
+    # Randomly choose one from each list
+    character = random.choice(characters)
+    location = random.choice(locations)
+    action = random.choice(actions)
+
+    # Form the story
+    return "One day", character,"went to" ,location and action
+
+# Generate and print the story
+print(random_story())
